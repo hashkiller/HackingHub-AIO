@@ -2,7 +2,7 @@ from colorama import init
 from colorama import Fore
 from pystyle import Colors, Colorate
 import time
-import datetime
+from datetime import datetime
 import os
 import requests
 from bs4 import BeautifulSoup
@@ -23,20 +23,142 @@ import smtplib
 import platform
 import getpass
 import sys
-import datetime
+import random, string, webbrowser, time, requests
+from colorama import init, Fore
+import playsound
+import multiprocessing
+import socket
+from pyfiglet import Figlet
+
+playsound.playsound('music.mp3', False)
+os.system("asciivp loading.gif --color")
+
+os.system('cls')
+
+print('                                                            \______/                               ')
+time.sleep(0.1)
+
+os.system('cls')
+print('                                                           |  $$$$$$/                              ')
+print('                                                            \______/                               ')
+time.sleep(0.1)
+
+
+os.system('cls')
+print('                                                            /$$  \ $$                              ')
+print('                                                           |  $$$$$$/                              ')
+print('                                                            \______/                               ')
+time.sleep(0.1)
+
+
+os.system('cls')
+print('     |__/  |__/ \_______/ \_______/|__/  \__/|__/|__/  |__/ \____  $$|__/  |__/ \______/ |_______/ ')
+print('                                                            /$$  \ $$                              ')
+print('                                                           |  $$$$$$/                              ')
+print('                                                            \______/                               ')
+time.sleep(0.1)
+
+
+os.system('cls')
+print('     | $$  | $$|  $$$$$$$|  $$$$$$$| $$ \  $$| $$| $$  | $$|  $$$$$$$| $$  | $$|  $$$$$$/| $$$$$$$/')
+print('     |__/  |__/ \_______/ \_______/|__/  \__/|__/|__/  |__/ \____  $$|__/  |__/ \______/ |_______/ ')
+print('                                                            /$$  \ $$                              ')
+print('                                                           |  $$$$$$/                              ')
+print('                                                            \______/                               ')
+time.sleep(0.1)
+
+
+os.system('cls')
+print('     | $$  | $$ /$$__  $$| $$      | $$_  $$ | $$| $$  | $$| $$  | $$| $$  | $$| $$  | $$| $$  | $$')
+print('     | $$  | $$|  $$$$$$$|  $$$$$$$| $$ \  $$| $$| $$  | $$|  $$$$$$$| $$  | $$|  $$$$$$/| $$$$$$$/')
+print('     |__/  |__/ \_______/ \_______/|__/  \__/|__/|__/  |__/ \____  $$|__/  |__/ \______/ |_______/ ')
+print('                                                            /$$  \ $$                              ')
+print('                                                           |  $$$$$$/                              ')
+print('                                                            \______/                               ')
+time.sleep(0.1)
+
+
+os.system('cls')
+print('     | $$__  $$  /$$$$$$$| $$      | $$$$$$/ | $$| $$  \ $$| $$  \ $$| $$__  $$| $$  | $$| $$  \ $$')
+print('     | $$  | $$ /$$__  $$| $$      | $$_  $$ | $$| $$  | $$| $$  | $$| $$  | $$| $$  | $$| $$  | $$')
+print('     | $$  | $$|  $$$$$$$|  $$$$$$$| $$ \  $$| $$| $$  | $$|  $$$$$$$| $$  | $$|  $$$$$$/| $$$$$$$/')
+print('     |__/  |__/ \_______/ \_______/|__/  \__/|__/|__/  |__/ \____  $$|__/  |__/ \______/ |_______/ ')
+print('                                                            /$$  \ $$                              ')
+print('                                                           |  $$$$$$/                              ')
+print('                                                            \______/                               ')
+time.sleep(0.1)
+
+
+os.system("cls")
+print('     | $$$$$$$$ |____  $$ /$$_____/| $$  /$$/| $$| $$__  $$ /$$__  $$| $$$$$$$$| $$  | $$| $$__  $$')
+print('     | $$__  $$  /$$$$$$$| $$      | $$$$$$/ | $$| $$  \ $$| $$  \ $$| $$__  $$| $$  | $$| $$  \ $$')
+print('     | $$  | $$ /$$__  $$| $$      | $$_  $$ | $$| $$  | $$| $$  | $$| $$  | $$| $$  | $$| $$  | $$')
+print('     | $$  | $$|  $$$$$$$|  $$$$$$$| $$ \  $$| $$| $$  | $$|  $$$$$$$| $$  | $$|  $$$$$$/| $$$$$$$/')
+print('     |__/  |__/ \_______/ \_______/|__/  \__/|__/|__/  |__/ \____  $$|__/  |__/ \______/ |_______/ ')
+print('                                                       /$$  \ $$                              ')
+print('                                                      |  $$$$$$/                              ')
+print('                                                       \______/                               ')
+time.sleep(0.1)
+
+
+os.system("cls")
+print('     | $$  | $$  /$$$$$$   /$$$$$$$| $$   /$$ /$$ /$$$$$$$   /$$$$$$ | $$  | $$ /$$   /$$| $$$$$$$ $')
+print('     | $$$$$$$$ |____  $$ /$$_____/| $$  /$$/| $$| $$__  $$ /$$__  $$| $$$$$$$$| $$  | $$| $$__  $$')
+print('     | $$__  $$  /$$$$$$$| $$      | $$$$$$/ | $$| $$  \ $$| $$  \ $$| $$__  $$| $$  | $$| $$  \ $$')
+print('     | $$  | $$ /$$__  $$| $$      | $$_  $$ | $$| $$  | $$| $$  | $$| $$  | $$| $$  | $$| $$  | $$')
+print('     | $$  | $$|  $$$$$$$|  $$$$$$$| $$ \  $$| $$| $$  | $$|  $$$$$$$| $$  | $$|  $$$$$$/| $$$$$$$/')
+print('     |__/  |__/ \_______/ \_______/|__/  \__/|__/|__/  |__/ \____  $$|__/  |__/ \______/ |_______/ ')
+print('                                                            /$$  \ $$                              ')
+print('                                                           |  $$$$$$/                              ')
+print('                                                            \______/                               ')
+time.sleep(0.1)
+
+
+os.system("cls")
+print('     | $$  | $$                    | $$      |__/                    | $$  | $$          | $$      ')
+print('     | $$  | $$  /$$$$$$   /$$$$$$$| $$   /$$ /$$ /$$$$$$$   /$$$$$$ | $$  | $$ /$$   /$$| $$$$$$$ $')
+print('     | $$$$$$$$ |____  $$ /$$_____/| $$  /$$/| $$| $$__  $$ /$$__  $$| $$$$$$$$| $$  | $$| $$__  $$')
+print('     | $$__  $$  /$$$$$$$| $$      | $$$$$$/ | $$| $$  \ $$| $$  \ $$| $$__  $$| $$  | $$| $$  \ $$')
+print('     | $$  | $$ /$$__  $$| $$      | $$_  $$ | $$| $$  | $$| $$  | $$| $$  | $$| $$  | $$| $$  | $$')
+print('     | $$  | $$|  $$$$$$$|  $$$$$$$| $$ \  $$| $$| $$  | $$|  $$$$$$$| $$  | $$|  $$$$$$/| $$$$$$$/')
+print('     |__/  |__/ \_______/ \_______/|__/  \__/|__/|__/  |__/ \____  $$|__/  |__/ \______/ |_______/ ')
+print('                                                            /$$  \ $$                              ')
+print('                                                           |  $$$$$$/                              ')
+print('                                                            \______/                               ')
+time.sleep(0.1)
+
+
+os.system("cls")
+print('      /$$   /$$                     /$$       /$$                     /$$   /$$           /$$      ')
+print('     | $$  | $$                    | $$      |__/                    | $$  | $$          | $$      ')
+print('     | $$  | $$  /$$$$$$   /$$$$$$$| $$   /$$ /$$ /$$$$$$$   /$$$$$$ | $$  | $$ /$$   /$$| $$$$$$$ $')
+print('     | $$$$$$$$ |____  $$ /$$_____/| $$  /$$/| $$| $$__  $$ /$$__  $$| $$$$$$$$| $$  | $$| $$__  $$')
+print('     | $$__  $$  /$$$$$$$| $$      | $$$$$$/ | $$| $$  \ $$| $$  \ $$| $$__  $$| $$  | $$| $$  \ $$')
+print('     | $$  | $$ /$$__  $$| $$      | $$_  $$ | $$| $$  | $$| $$  | $$| $$  | $$| $$  | $$| $$  | $$')
+print('     | $$  | $$|  $$$$$$$|  $$$$$$$| $$ \  $$| $$| $$  | $$|  $$$$$$$| $$  | $$|  $$$$$$/| $$$$$$$/')
+print('     |__/  |__/ \_______/ \_______/|__/  \__/|__/|__/  |__/ \____  $$|__/  |__/ \______/ |_______/ ')
+print('                                                            /$$  \ $$                              ')
+print('                                                           |  $$$$$$/                              ')
+print('                                                            \______/                               ')
+time.sleep(0.1)
+os.system("cls")
+
+
+A = '11'
+
 
 def art():
-    print(f"{Fore.BLUE} /$$   /$$                     /$$       /$$                     /$$   /$$           /$$            ")
-    print(f"{Fore.BLUE}| $$  | $$                    | $$      |__/                    | $$  | $$          | $$            ")
-    print(f"{Fore.LIGHTBLUE_EX}| $$  | $$  /$$$$$$   /$$$$$$$| $$   /$$ /$$ /$$$$$$$   /$$$$$$ | $$  | $$ /$$   /$$| $$$$$$$       ")
-    print(f"{Fore.CYAN}| $$$$$$$$ |____  $$ /$$_____/| $$  /$$/| $$| $$__  $$ /$$__  $$| $$$$$$$$| $$  | $$| $$__  $$      ")
-    print(f"{Fore.LIGHTCYAN_EX}| $$__  $$  /$$$$$$$| $$      | $$$$$$/ | $$| $$  \ $$| $$  \ $$| $$__  $$| $$  | $$| $$  \ $$      ")
-    print(f"{Fore.CYAN}| $$  | $$ /$$__  $$| $$      | $$_  $$ | $$| $$  | $$| $$  | $$| $$  | $$| $$  | $$| $$  | $$      ")
-    print(f"{Fore.LIGHTBLUE_EX}| $$  | $$|  $$$$$$$|  $$$$$$$| $$ \  $$| $$| $$  | $$|  $$$$$$$| $$  | $$|  $$$$$$/| $$$$$$$/      ")
-    print(f"{Fore.BLUE}|__/  |__/ \_______/ \_______/|__/  \__/|__/|__/  |__/ \____  $$|__/  |__/ \______/ |_______/       ")
-    print(f"{Fore.BLUE}                                                       /$$  \ $$                                    ")
-    print(f"{Fore.BLUE}                                                      |  $$$$$$/                                    ")
-    print(f"{Fore.BLUE}                                                       \______/                                     ")
+    print(f"{Fore.BLUE}      /$$   /$$                     /$$       /$$                     /$$   /$$           /$$            ")
+    print(f"{Fore.BLUE}     | $$  | $$                    | $$      |__/                    | $$  | $$          | $$            ")
+    print(f"{Fore.LIGHTBLUE_EX}     | $$  | $$  /$$$$$$   /$$$$$$$| $$   /$$ /$$ /$$$$$$$   /$$$$$$ | $$  | $$ /$$   /$$| $$$$$$$       ")
+    print(f"{Fore.CYAN}     | $$$$$$$$ |____  $$ /$$_____/| $$  /$$/| $$| $$__  $$ /$$__  $$| $$$$$$$$| $$  | $$| $$__  $$      ")
+    print(f"{Fore.LIGHTCYAN_EX}     | $$__  $$  /$$$$$$$| $$      | $$$$$$/ | $$| $$  \ $$| $$  \ $$| $$__  $$| $$  | $$| $$  \ $$      ")
+    print(f"{Fore.CYAN}     | $$  | $$ /$$__  $$| $$      | $$_  $$ | $$| $$  | $$| $$  | $$| $$  | $$| $$  | $$| $$  | $$      ")
+    print(f"{Fore.LIGHTBLUE_EX}     | $$  | $$|  $$$$$$$|  $$$$$$$| $$ \  $$| $$| $$  | $$|  $$$$$$$| $$  | $$|  $$$$$$/| $$$$$$$/      ")
+    print(f"{Fore.BLUE}     |__/  |__/ \_______/ \_______/|__/  \__/|__/|__/  |__/ \____  $$|__/  |__/ \______/ |_______/       ")
+    print(f"{Fore.BLUE}                                                            /$$  \ $$                                    ")
+    print(f"{Fore.BLUE}                                                           |  $$$$$$/                                    ")
+    print(f"{Fore.BLUE}                                                            \______/                                     ")
 
 
 
@@ -526,6 +648,7 @@ if __name__ == '__main__': #Runs only if the file is run, not imported
                     $ stealing-passwords - Steal all password of an windows os
                     $ mail-bomber (linux) - Simply attack mail ;)
                     $ http-flooder
+                    $ ip-scanner
                     $ clear - clearing the console
 		    $ exit - output
 		    ''')
@@ -626,19 +749,55 @@ if __name__ == '__main__': #Runs only if the file is run, not imported
             for i in range(threads):
                 t = threading.Thread(target=send_requests, args=(url,threads))
                 t.start()
+                
+                
+        elif start == 'ip-scanner':
+            
+            port_min = 0
+            port_max = 65535
+            t1 = datetime.now()
+            ip_add_check = re.compile("^(?:[0-9]{1,3}\.){3}[0-9]{1,3}$")
+            port_range_check = re.compile("([0-9]+)-([0-9]+)")
 
+            open_ports = []
+            while True:
+                ip_add_entered = input("\nIP Address : ")
+                if ip_add_check.search(ip_add_entered):
+                    print(f"{ip_add_entered} is a valid ip address")
+                    break
 
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
+            while True:
+                print("Please enter the range of ports you want to scan in format: <int>-<int> (ex. 60-120)")
+                port_range = input("Port Numbers: ")
+                port_range_valid = port_range_check.search(port_range.replace(" ",""))
+                if port_range_valid:
+                    port_min = int(port_range_valid.group(1))
+                    port_max = int(port_range_valid.group(2))
+                    break
+
+            #setting up the socket to scan TCP and UDP
+            for port in range(port_min, port_max + 1):
+                try:
+                    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+                        s.settimeout(0.5)
+                        s.connect((ip_add_entered, port))
+                        # If the following line runs then then it was successful in connecting to the port.
+                        open_ports.append(port)
+                except:
+                    pass
+            for port in open_ports:
+                # We use an f string to easily format the string with variables so we don't have to do concatenation.
+                print(f"Port {port} is open on {ip_add_entered}.")
+
+            # Checking the time again
+            t2 = datetime.now()
+            total =  t2 - t1
+            print('Scanning Completed in: ', total)
+
+            
+
+            
+
         elif start == 'clear':
             clear()
         elif start == 'exit':
